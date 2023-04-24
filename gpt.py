@@ -33,7 +33,6 @@ with open('responses.txt','r') as historyFile:
 
 while moreQuestions:
     user_prompt = stt.listen()
-    print(user_prompt)
     if user_prompt.lower() =='stop':
         moreQuestions = False
     else:
