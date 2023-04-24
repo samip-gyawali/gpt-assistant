@@ -1,10 +1,7 @@
 import speech_recognition as sr
-import os
 
 def listen():
     global recognizer
-    os.system('cls')
-
     try:
         with sr.Microphone() as source:
             print("You may now speak!")

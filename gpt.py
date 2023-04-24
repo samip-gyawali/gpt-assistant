@@ -24,7 +24,6 @@ with open('responses.txt','r') as historyFile:
     newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
     
     while(newLine!=''):
-        print(f"{newLine}\n")
         messages.append({"role":"user","content":newLine})
         newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
         messages.append({"role":"system","content":newLine})
