@@ -17,7 +17,7 @@ Built on the openAI gpt-3.5-turbo model.
 - python3 installed
 - pip installed
 # Setup
-1. Create a `.env` file, write `apikey='<YOUR KEY>'` inside it, and save it in the same directory as `gpt.py`
+1. Create a `.env` file, write `apikey='<YOUR OPENAI API_KEY>'` inside it, and save it in the same directory as `gpt.py`
 2. run `pip install openai`, `pip install dotenv`, `pip install gtts`, `pip install playsound` and `pip3 install SpeechRecognition pydub`. Visit https://www.thepythoncode.com/article/using-speech-recognition-to-convert-speech-to-text-python  and https://www.geeksforgeeks.org/python-convert-speech-to-text-and-text-to-speech/ for more details
 3. Run the `gpt.py` file
 
