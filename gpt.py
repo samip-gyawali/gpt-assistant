@@ -21,6 +21,7 @@ def askGpt(user_prompt):
 user_prompt = input("Enter the question: ")
 message = askGpt(user_prompt)
 
+tts.speak('Welcome back, sir!')
 tts.speak(message)
 
 with open('responses.txt','a') as responseFile:
