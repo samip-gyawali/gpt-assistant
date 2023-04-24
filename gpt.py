@@ -1,6 +1,6 @@
 import dotenv as env
 import openai as oa
-import tts
+import tts, stt
 
 oa.api_key = env.dotenv_values()['apikey']
 
@@ -15,10 +15,10 @@ def askGpt(user_prompt):
             {"role":"user","content":user_prompt}
         ])
     message = response.choices[0].message.content
-    return  message
+    return message
 
 
-user_prompt = input("Enter the question: ")
+user_prompt = stt.listen()
 message = askGpt(user_prompt)
 
 tts.speak(message)
