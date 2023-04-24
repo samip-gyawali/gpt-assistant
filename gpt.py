@@ -20,13 +20,18 @@ messages = [
     {"role":"user","content":"I will ask you a few questions, and please answer politely"},
     {"role":"system","content":"Sure, sir! Ask me the questions. I will only reply things I know for a fact. If not, I will add 'I don't know much about this but to my knowledge' before I answer"},
 ]
-with open('responses.txt','r') as historyFile:
-    newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
-    
-    while(newLine!=''):
-        messages.append({"role":"user","content":newLine})
+
+try:
+    with open('no.txt','r') as historyFile:
         newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
-        messages.append({"role":"system","content":newLine})
+    
+        while(newLine!=''):
+            messages.append({"role":"user","content":newLine})
+            newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
+            messages.append({"role":"system","content":newLine})
+
+except FileNotFoundError:
+    print("",end='')
 
 
 
