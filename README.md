@@ -23,7 +23,12 @@ Libraries:
 - Takes in text to speak as a parameter
 - Uses gtts library to create an audio file, plays it and deletes the file
 
+# The `stt.listen()` module
+- gives the user 5 seconds to speak, and turns the voice into text
+- the text is used as the prompt for the user
+
 # Working:
 - Program asks user for a prompt
+- Prompt is taken by voice through the `stt.listen()` module
 - Gets response from the AI through the `askGpt()` module
 - Speaks the response through the `tts.speak()` module
