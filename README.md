@@ -1,5 +1,6 @@
 # JARVIS?
-Built on the openAI gpt-3.5-turbo model.\n
+Built on the openAI gpt-3.5-turbo model.
+
 Usage:
 - User may ask questions in the input
 - The gpt-3.5-turbo model generates response
