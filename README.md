@@ -1,4 +1,4 @@
-# JARVIS?
+# JARVIS
 Built on the openAI gpt-3.5-turbo model.
 
 Usage:
