@@ -22,7 +22,7 @@ messages = [
 ]
 
 try:
-    with open('no.txt','r') as historyFile:
+    with open('responses.txt','r') as historyFile:
         newLine = historyFile.readline().strip('prompt: ').strip('Reponse:').strip('\n')
     
         while(newLine!=''):
