@@ -1,5 +1,6 @@
 import dotenv as env
 import openai as oa
+import tts
 
 oa.api_key = env.dotenv_values()['apikey']
 
@@ -19,6 +20,9 @@ def askGpt(user_prompt):
 
 user_prompt = input("Enter the question: ")
 message = askGpt(user_prompt)
+
+tts.speak(message)
+
 with open('responses.txt','a') as responseFile:
     responseFile.write(f"\nprompt: {user_prompt}\n")
     responseFile.write(f"Reponse: {message}")
