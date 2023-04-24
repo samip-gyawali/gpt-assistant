@@ -1,16 +1,25 @@
 # JARVIS
 Built on the openAI gpt-3.5-turbo model.
 
-Usage:
+# Usage:
 - User may ask questions in the input
 - The gpt-3.5-turbo model generates response
 - The response is then converted to voice by gTTs library
 - It is played by the playsound library
 
-User Guide:
+# User Guide:
 - When the terminal says `You may now speak`, the user has 5 seconds to assign a prompt for the chatbot to respond to
 - The system responds with a reply and stores this chat for future use.
 - The AI remembers the previous chat
+
+# Requirements: 
+- a valid openAI api key
+- python3 installed
+- pip installed
+# Setup
+1. Create a `.env` file, write `apikey='<YOUR KEY>'` inside it, and save it in the same directory as `gpt.py`
+2. run `pip install openai`, `pip install dotenv`, `pip install gtts`, `pip install playsound` and `pip3 install SpeechRecognition pydub`. Visit https://www.thepythoncode.com/article/using-speech-recognition-to-convert-speech-to-text-python  and https://www.geeksforgeeks.org/python-convert-speech-to-text-and-text-to-speech/ for more details
+3. Run the `gpt.py` file
 
 # Code Documentation
 Libraries:
@@ -18,6 +27,7 @@ Libraries:
 - dotenv
 - gtts
 - playsound
+- speech_recognition
 
 # The `askGpt()` module:
 - Takes `user_prompt` as a parameter
