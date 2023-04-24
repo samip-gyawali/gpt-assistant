@@ -1,5 +1,5 @@
 # JARVIS
-Built on the openAI gpt-3.5-turbo model.
+Inspired by Marvel's JARVIS, this project uses OpenAI's gpt-3.5-turbo model to function as a chatting AI assistant.
 
 # Usage:
 - User may ask questions in the input
