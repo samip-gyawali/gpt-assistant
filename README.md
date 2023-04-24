@@ -7,6 +7,11 @@ Usage:
 - The response is then converted to voice by gTTs library
 - It is played by the playsound library
 
+User Guide:
+- When the terminal says `You may now speak`, the user has 5 seconds to assign a prompt for the chatbot to respond to
+- The system responds with a reply and stores this chat for future use.
+- The AI remembers the previous chat
+
 # Code Documentation
 Libraries:
 - openai
