@@ -1,5 +1,5 @@
 # JARVIS
-Inspired by Marvel's JARVIS, this project uses OpenAI's gpt-3.5-turbo model to take user's voice as an input and answers question with a computer generated voice.
+Inspired by Marvel's JARVIS, this project uses OpenAI's gpt-3.5-turbo model to take user's voice as an input and answers the question with a computer generated voice.
 
 # Usage:
 - User may ask questions in the input
