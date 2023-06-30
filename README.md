@@ -8,9 +8,9 @@ Inspired by Marvel's JARVIS, this project uses OpenAI's gpt-3.5-turbo model to t
 - It is played by the playsound library
 
 # User Guide:
-- When the terminal says `You may now speak`, the user has 5 seconds to assign a prompt for the chatbot to respond to
+- When the computer says `You may now speak`, the user has 5 seconds to assign a prompt for the chatbot to respond to
 - The system responds with a reply and stores this chat for future use.
-- The AI remembers the previous chat
+- The AI remembers all the previous chat
 
 # Requirements: 
 - a valid openAI api key
